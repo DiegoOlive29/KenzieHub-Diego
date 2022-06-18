@@ -8,5 +8,7 @@ export const Container = styled.div`
     justify-content:    center;
     text-align:         center;
  
-    
+    .logoPadrao{
+        margin-bottom 30px;
+    }
     `;
