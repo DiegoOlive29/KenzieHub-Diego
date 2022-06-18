@@ -6,15 +6,14 @@ export const Logo = styled.span`
   height: 20px;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom:30px; 
-`;
+`
 export const FormPadrao = styled.form`
   background: var(--greyBody);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  gap: 20px;
+  gap: 15px;
   border-radius:      5px;
     h3{
         color:var(--fontColorWhit);
@@ -43,6 +42,10 @@ export const FormPadrao = styled.form`
       color: var(--fontColorWhit);
       font-size: 12px;
     }
+    .textInfRegister{
+      color: var(--greyBtt);
+      font-size: 12px;
+    }
     .login{
       width: 324px;
       height 50px;
@@ -57,4 +60,16 @@ export const FormPadrao = styled.form`
       border: 1px solid var(--fontColor);
       border-radius 5px;
     }
+    .registrationAction{
+        width: 324px;
+        height 50px;
+        background:var(--pinkNegative);
+        border: 1px solid var(--pinkNegative);
+        border-radius 5px;
+      
+    }
+    .inputregister{
+      border: none;
+    }
+ 
 `;
