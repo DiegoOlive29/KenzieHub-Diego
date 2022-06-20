@@ -31,7 +31,9 @@ function Login() {
     .then(()=> console.log(localStorage.token))
     .catch((error) => console.log(error));
   }
-
+  if(localStorage.token){
+    return history.push("/Home")
+  }
   return (
 
     <Container>
@@ -46,7 +48,7 @@ function Login() {
           <span className="textInfRegister"> {errors.email?.message}</span>
         )}
         <label htmlFor="">Senha</label>
-        <input placeholder="Digite sua senha!"  {...register('password')} type="text" />
+        <input placeholder="Digite sua senha!"  {...register('password')} type="password" />
         {errors.email && (
           <span className="textInfRegister"> {errors.email?.message}</span>
         )}

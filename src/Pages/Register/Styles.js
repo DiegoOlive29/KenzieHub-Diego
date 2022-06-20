@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const ContainerTop = styled.div`
     width:           370px;
-    height:          30px;
+    height:          10%;
     display:         flex;
     align-items: center;
     justify-content: space-between;
