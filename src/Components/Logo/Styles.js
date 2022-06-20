@@ -12,8 +12,8 @@ export const FormPadrao = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
-  gap: 15px;
+  padding: 20px 20px;
+  gap: 12px;
   border-radius:      5px;
     h3{
         color:var(--fontColorWhit);
@@ -28,11 +28,20 @@ export const FormPadrao = styled.form`
         background:var(--greyCamp);
         width: 330px;
         height:45px;
-
+        color:var(--fontColorWhit) ;
         border-radius: 5px;
         border : 2px solid var(--fontColorWhit);
         padding: 16px;
         gap:10px;
+    }
+    select{ background:var(--greyCamp);
+      width: 330px;
+      height:50px;
+      color:var(--fontColorWhit) ;
+      border-radius: 5px;
+      border: none;
+      padding: 16px;
+      gap:10px;
     }
     input::placeholder{
       color:var(--fontColorWhit);

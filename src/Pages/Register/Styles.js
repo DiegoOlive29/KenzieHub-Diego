@@ -16,7 +16,7 @@ export const ContainerTop = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 10px 0 0;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 
 .back{
     width: 80px;
