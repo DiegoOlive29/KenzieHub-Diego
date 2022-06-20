@@ -1,27 +1,38 @@
-import { Container } from "./Styles";
+import { Container, Top, Principal } from "./Styles";
 import LogoPadrao from "../../Components/Logo/Logo";
-import { FormPadrao } from "../../Components/Logo/Styles";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import axios from "axios";
+import * as yup from "yup";
+import Card from "../../Components/Card/Card";
+
 function Home() {
+  const history = useHistory();
+
+  function navegation(path) {
+    return history.push(path);
+  }
+
   return (
     <Container>
-      <div className="logoPadrao">
-        <LogoPadrao />
+      <Top>
+        <LogoPadrao />{" "}
+        <button onClick={() => navegation("/")} className="back">
+          Sair
+        </button>
+      </Top>
+
+      <div className="user">
+        <span className="name">Olá, Nome da pessoa</span>
+        <span className="modulo">Primeiro módulo (Introdução ao Frontend)</span>
       </div>
-      <FormPadrao>
-        <h3>Login</h3>
-        <label htmlFor="">Email</label>
-        <input placeholder=" Digite seu e-mail!" type="text" />
-
-        <label htmlFor="">Senha</label>
-        <input placeholder="Digite sua senha!" type="text" />
-
-        <button className="login">Entrar</button>
-
-        <span className="textInf"> Ainda não possui uma conta?</span>
-
-        <button className="registration">Cadastre-se</button>
-      </FormPadrao>
+      <div className="add">
+        <span>Tecnologias </span> <button className="btnadd">+ </button>
+      </div>
+      <Principal>
+        <div className="content">
+          <Card />
+        </div>
+      </Principal>
     </Container>
   );
 }

@@ -11,12 +11,12 @@ export const Container = styled.div`
 
 export const ContainerTop = styled.div`
     width:           370px;
-    height:          30px;
+    height:          10%;
     display:         flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10px 0 0;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 
 .back{
     width: 80px;
