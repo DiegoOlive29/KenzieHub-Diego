@@ -8,8 +8,11 @@ import axios from "axios";
 
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
+import { useState } from "react";
 
 function Register() {
+  const [result,setResult]=useState(["Crie sua conta!"])
+
   const formSchema = yup.object().shape({
     email: yup.string().required("Email obrigatório.").email("Email Inválido."),
     password: yup
@@ -45,8 +48,9 @@ function Register() {
 
     axios
       .post("https://kenziehub.herokuapp.com/users", novoUser)
-      .then((response) => console.log(response.data))
-      .catch((error) => console.log(error));
+      .then(() => setResult("Cadastro realizado!"))
+    
+      .catch((error) => setResult("Erro no cadastro!"));
   }
 
   const history = useHistory();
@@ -64,7 +68,7 @@ function Register() {
         </button>
       </ContainerTop>
       <FormPadrao onSubmit={handleSubmit(createUser)}>
-        <h3>Crie sua conta!</h3>
+        <h3>{result}</h3>
 
         <span className="textInfRegister"> Rapido e grátis, vamos nessa</span>
 

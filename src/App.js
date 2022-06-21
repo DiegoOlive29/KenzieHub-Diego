@@ -4,6 +4,7 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import Home from './Pages/Home/Home';
 import { useState } from 'react';
+import { ToastContainer } from 'react-toastify';
 function App() {
 
   const [dados,setDados] = useState([])
@@ -22,7 +23,6 @@ function App() {
 
 
       <Route  path={"/register"}>
-          
           <Register/>
           
       </Route>
