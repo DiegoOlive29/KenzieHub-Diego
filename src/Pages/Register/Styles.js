@@ -10,21 +10,20 @@ export const Container = styled.div`
 `;
 
 export const ContainerTop = styled.div`
-    width:           370px;
-    height:          10%;
-    display:         flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px 0 0;
-    margin: 0 0 20px 0;
+  width: 370px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 0;
+  margin: 0 0 20px 0;
 
-.back{
+  .back {
     width: 80px;
-    height 40px;
-    background:var(--greyBody);
+    height: 40px;
+    background: var(--greyBody);
     border: 1px solid var(--greyBody);
-    border-radius 5px;
+    border-radius: 5px;
     font-size: 12px;
-    
-}
+  }
 `;

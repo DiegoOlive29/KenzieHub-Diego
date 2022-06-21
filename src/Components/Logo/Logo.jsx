@@ -1,12 +1,6 @@
-import { Logo } from "./Styles"
+import { Logo } from "./Styles";
 
-function LogoPadrao(){
-    return (
-        <Logo>
-            Kenzie Hub
-        </Logo>
-
-    )
-
-
-}export default LogoPadrao
+function LogoPadrao() {
+  return <Logo>Kenzie Hub</Logo>;
+}
+export default LogoPadrao;
