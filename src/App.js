@@ -3,16 +3,20 @@ import { Switch, Route } from 'react-router-dom';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import Home from './Pages/Home/Home';
+import { useState } from 'react';
 function App() {
+
+  const [dados,setDados] = useState([])
+  
   return (
-    
+
   <>
   <GlobalStyle/> 
 
     <Switch>
       <Route exact path={"/"}>
           
-        <Login/>
+        <Login dados={dados} setDados={setDados}/>
         
       </Route>
 
@@ -25,7 +29,7 @@ function App() {
 
       <Route  path={"/Home"}>
           
-          <Home/>
+          <Home dados={dados}/>
           
       </Route>
     </Switch>
