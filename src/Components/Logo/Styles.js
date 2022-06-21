@@ -57,24 +57,24 @@ export const FormPadrao = styled.form`
     }
     .login{
       width: 324px;
-      height 50px;
+      height: 50px;
       background:var(--pinkPrimary);
       border: 1px solid var(--pinkPrimary);
-      border-radius 5px;
+      border-radius: 5px;
     }
     .registration{
       width: 324px;
-      height 50px;
+      height: 50px;
       background:var(--fontColor);
       border: 1px solid var(--fontColor);
-      border-radius 5px;
+      border-radius: 5px;
     }
     .registrationAction{
         width: 324px;
-        height 50px;
+        height: 50px;
         background:var(--pinkNegative);
         border: 1px solid var(--pinkNegative);
-        border-radius 5px;
+        border-radius: 5px;
       
     }
     .inputregister{
